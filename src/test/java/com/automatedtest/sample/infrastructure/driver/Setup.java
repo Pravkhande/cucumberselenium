@@ -13,7 +13,8 @@ public class Setup {
     @Before
     public void setWebDriver() throws Exception {
 
-        String browser = System.getProperty("browser");
+        String browser = System.getenv("BROWSER");
+        System.out.println("Using browser "+browser+".....................");
         if (browser == null) {
             browser = "chrome";
         }

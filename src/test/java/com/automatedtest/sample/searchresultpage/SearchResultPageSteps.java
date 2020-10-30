@@ -16,4 +16,6 @@ public class SearchResultPageSteps {
         Assert.assertTrue(expectedResult + " wasn't found in the first " + nbOfResultsToSearch + " results.",
                 this.searchResultPage.isInResults(expectedResult, nbOfResultsToSearch));
     }
+
+    
 }

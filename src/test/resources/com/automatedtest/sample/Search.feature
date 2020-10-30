@@ -1,7 +1,7 @@
+@all
 Feature: Search
 
-
-  @search @search_01
+  @search 
   Scenario Outline: Search cucumber studio
     Given A user navigates to HomePage "fr"
     When a user searches for "cucumber studio"
@@ -10,3 +10,4 @@ Feature: Search
     Examples:
       | nbOfResultsToSearch |
       | 3 |
+
