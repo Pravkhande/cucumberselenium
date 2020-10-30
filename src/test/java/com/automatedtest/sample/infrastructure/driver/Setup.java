@@ -19,12 +19,12 @@ public class Setup {
             browser = "chrome";
         }
         switch (browser) {
-            case "chrome":
+            case "Chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("['start-maximized']");
                 driver = new ChromeDriver(chromeOptions);
                 break;
-            case "firefox":
+            case "Firefox":
                 driver = new FirefoxDriver();
                 driver.manage().window().maximize();
                 break;
